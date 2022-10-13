@@ -1,0 +1,155 @@
+@import url("diseños.css");
+
+
+@media screen and (max-width:1250px){
+  .contenedor-menu{
+    gap: 80px;
+  }
+  .contenedor-foto{
+    /* border: 1px blue solid; */
+    display: flex;
+    height: 500px;
+    width: 500px;
+  }
+  .contenedor-acerca{
+    display: flex;
+    align-items: center;
+  }
+  .ancho{
+    max-width: 900px;
+    margin: auto;
+    align-items: center; 
+  }
+
+}
+
+
+      /* ipad */
+@media screen and (max-width:850px){
+  .contenedor-menu{
+    gap: 40px;
+  }
+  .contenedor-foto{
+    /* border: 1px blue solid; */
+    display: flex;
+    height: 300px;
+    width: 300px;
+  }
+  .ancho{
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+  }
+  .contenedor-acerca{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+    /* movil */
+@media screen and (max-width:600px){
+  header{
+    height: 100%;
+  }
+  .contenedor-menu{
+    display: none;
+  }
+  .menubar {
+    display: block;
+  }
+  .menubar picture img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .minombre{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 50px;
+  }
+  .minombre h1{
+    margin: 0%;
+  }
+  .minombre h2{
+    margin: 0%;
+  }
+  .contenedor-menu img{
+    display: none;
+  }
+  .menudos{
+    display: none;
+    padding-bottom: 15px;
+
+  }
+  .menudos li {
+    border-bottom:2px white dotted;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-family: var(--oswald);
+  }
+  .menudos a{
+    /* border: 1px green solid; */
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .contenedor-foto{
+    /* border: 1px blue solid; */
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
+.contenedor-acerca{
+  display: flex;
+  flex-direction: column;
+}
+.datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.datosdos{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.contacto{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+}
+.contacto i{
+  margin: 0%;
+}
+.telefono h1{
+  font-size: 15px;
+}
+.correo h1{
+  font-size: 15px;
+}
+.iconredes{
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px ;
+}
+.iconredes i{
+  padding: 0%;
+}
+
+}
+
+@media screen and (max-width:400px){
+  .contacto{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+
+    <link rel="stylesheet" href="diseños.css">
+    <link rel="stylesheet" href="movil.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function() {
+          $("").responsiveSlides();
+        });
+      </script>
+      
+    <header class="cabecera">
+       
+        <ul class="contenedor-menu ancho">
+            <picture>
+                <img src="imagenes/PERFIL.jpg" alt="">
+            </picture>
+            <li><a href="#acerca">ABOUT</a></li>
+            <li><a href="#servi">SERVICIOS</a></li>
+            <li><a href="#contactame">CONTACTO</a></li>
+          </ul>
+          <nav>
+          <div class="menubar">
+              <picture>
+                <img src="imagenes/PERFIL.jpg" alt="">
+                <a href="#"><i id="menu-icon" class="fa-solid fa-bars"></i> </a>
+              </picture>
+          </div>
+       </nav>
+       <div class="minombre">
+        <h1>ANTONIO</h1>
+        <h2>FARFÁN</h2>
+        </div>
+
+        <div class="sub">
+            <h1>I'M A FRONT-END</h1>
+        </div>
+
+        <nav>
+            <ul class="menudos">
+                <li><a href="#acerca">ABOUT</a></li>
+                <li><a href="#servi">SERVICIOS</a></li>
+                <li><a href="#contactame">CONTACTO</a></li>
+              </ul>
+        </nav>
+
+        <script>
+            $("#menu-icon").click(function() {
+              $(".menudos").slideToggle();
+            });
+          </script>
+    </header>
+
+    <section class="ABOUT" id="acerca">
+        <div class="titu">
+            <h1> Acerca de mi.</h1>
+        </div>
+
+        <div class="contenedor-acerca ancho">
+            <section>
+                <picture class="contenedor-foto">
+                    <img src="imagenes/YO.jpg" alt="">
+                </picture>
+            </section>
+
+            <section class="contenedor-info">
+
+                <article class="informacion">
+                    <h1>¿Quién Soy?</h1>
+                    <h2>Soy Antonio Farfán. Desarrollador Front-end</h2>
+                    <br>
+                     <p>Estudiante del poderosisimo Intituto Tecnológico de Mérida, estudio la carrera de Ingenieria en Sistemas Computacionales.</p>
+                </article>
+
+                <article class="datos">
+                    <h1>Nombre:</h1>
+                    <p>José Antonio Farfán</p>
+                    <h2>Edad:</h2>
+                    <p>22 Años</p>
+
+                </article>
+
+                <article class="datosdos">
+                    <h3>Email:</h3>
+                    <p>farfan1burgos@gmail.com</p>
+                    <h4>Lugar:</h4>
+                    <p>Muna</p>
+                </article>
+
+                <article>
+                    <ul class="botoncv">
+                        <li><a href="#l">DESCARGAR CV</a></li>
+                    </ul>
+                </article>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <section class="SERVICIOS" id="servi">
+
+        <article class="titulo-servi">
+            <h1>Mis servicios</h1>
+        </article>
+
+        <div class="contenedor-servicios ancho">
+
+            <article class="serv" >
+                <i class="fa-solid fa-code"></i>
+                <h1>Desarrollo de páginas web </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error iure cum, omnis perspiciatis et, quisquam maxime qui explicabo culpa atque ex ea eveniet
+                </p>
+            </article>
+
+            <article class="serv">
+                <i class="fa-brands fa-css3"></i>
+                <h1>CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error iure cum, omnis perspiciatis et, quisquam maxime qui explicabo culpa atque ex ea eveniet. Ipsum doloribus quasi in temporibus perferendis!
+                </p>
+            </article>
+
+            <article class="serv">
+                <i class="fa-brands fa-js-square"></i>
+                <h1>JavaScript</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error iure cum, omnis perspiciatis et, quisquam maxime qui explicabo culpa atque ex ea eveniet. Ipsum doloribus quasi in temporibus perferendis!
+                </p>
+            </article>
+
+            <article class="serv">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h1>Responsive</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error iure cum, omnis perspiciatis et, quisquam maxime qui explicabo culpa atque ex ea eveniet. Ipsum doloribus quasi in temporibus perferendis!
+                </p>
+            </article>
+
+            <article class="serv" >
+                <i class="fa-brands fa-html5"></i>
+                <h1>HTML5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error iure cum, omnis perspiciatis et, quisquam maxime qui explicabo culpa atque ex ea eveniet. Ipsum doloribus quasi in temporibus perferendis!
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="contactame" id="contactame">
+
+        <div class="cont">
+            <h1>Contactame</h1>
+        </div>
+
+        <article class="ancho">
+
+            <form class="formulario" action="" method="post">
+            <ul>
+
+             <li>
+
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="user_name">
+
+            </li>
+
+            <li>
+               <label for="mail">Email:</label>
+               <input type="email" id="mail" name="user_mail">
+
+            </li>
+
+             <li>
+
+                <label for="mail">Asunto:</label>
+               <input type="text" id="Asunto" name="user_subject">
+
+            </li>
+
+            <li>
+                  <label for="msg">Mensaje:</label>
+               <textarea id="msg" name="user_message"></textarea>
+            </li>
+
+            </ul>
+           </form>
+        </article>
+        
+
+
+    </section>
+
+    <footer>
+        <aside class="iconredes">
+            <a href="https://www.facebook.com/Antonio.Farfan199"><i class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/antonio_farfan199/"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://twitter.com/AntonyFrf"><i class="fa-brands fa-twitter"></i></a>
+
+
+        </aside>
+        
+        <aside class="contacto">
+            <article class="telefono">
+                <a href="#l"><i class="fa-solid fa-phone"></i></a>
+            <h1>+52 997-108-38-19</h1>
+            </article>
+            
+            <article class="correo">
+                <a href="#l"><i class="fa-solid fa-envelope"></i></a>
+                <h1>farfan1burgos@gmail.com</h1>
+            </article>
+            
+        </aside>
+
+
+    </footer>
+
+
+
+</body>
+</html>
